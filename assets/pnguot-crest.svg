@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield shape -->
+  <path d="M10 8 Q10 2 16 2 L84 2 Q90 2 90 8 L90 85 Q90 105 50 118 Q10 105 10 85Z" fill="#B91C1C"/>
+  <path d="M15 10 Q15 6 19 6 L81 6 Q85 6 85 10 L85 83 Q85 100 50 112 Q15 100 15 83Z" fill="#DC2626"/>
+  <!-- Central design - stylized traditional motif -->
+  <ellipse cx="50" cy="55" rx="28" ry="38" fill="none" stroke="white" stroke-width="3"/>
+  <ellipse cx="50" cy="55" rx="18" ry="28" fill="none" stroke="white" stroke-width="2.5"/>
+  <!-- Inner spiral patterns -->
+  <circle cx="50" cy="38" r="8" fill="none" stroke="white" stroke-width="2"/>
+  <circle cx="50" cy="38" r="4" fill="white"/>
+  <circle cx="50" cy="72" r="8" fill="none" stroke="white" stroke-width="2"/>
+  <circle cx="50" cy="72" r="4" fill="white"/>
+  <!-- Connecting lines -->
+  <line x1="50" y1="46" x2="50" y2="64" stroke="white" stroke-width="2"/>
+  <!-- Side decorations -->
+  <path d="M32 55 Q38 45 50 42" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M68 55 Q62 45 50 42" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M32 55 Q38 65 50 68" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M68 55 Q62 65 50 68" fill="none" stroke="white" stroke-width="1.5"/>
+</svg>

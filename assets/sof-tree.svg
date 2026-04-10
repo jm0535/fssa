@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tree canopy - large spreading tropical tree -->
+  <ellipse cx="100" cy="75" rx="85" ry="65" fill="#1a6b2a"/>
+  <ellipse cx="55" cy="60" rx="45" ry="40" fill="#1f7a30"/>
+  <ellipse cx="145" cy="60" rx="45" ry="40" fill="#1f7a30"/>
+  <ellipse cx="100" cy="50" rx="55" ry="42" fill="#228b34"/>
+  <ellipse cx="70" cy="45" rx="35" ry="30" fill="#26943a"/>
+  <ellipse cx="130" cy="45" rx="35" ry="30" fill="#26943a"/>
+  <ellipse cx="100" cy="38" rx="40" ry="28" fill="#2a9e3e"/>
+  <ellipse cx="85" cy="35" rx="25" ry="20" fill="#2da843"/>
+  <ellipse cx="115" cy="35" rx="25" ry="20" fill="#2da843"/>
+  <ellipse cx="100" cy="30" rx="28" ry="18" fill="#30b247"/>
+  <!-- Additional canopy detail -->
+  <ellipse cx="40" cy="75" rx="30" ry="25" fill="#1a6b2a"/>
+  <ellipse cx="160" cy="75" rx="30" ry="25" fill="#1a6b2a"/>
+  <ellipse cx="100" cy="85" rx="65" ry="30" fill="#1a6b2a" opacity="0.7"/>
+  <!-- Trunk -->
+  <path d="M88 110 L85 180 Q85 195 100 195 Q115 195 115 180 L112 110Z" fill="#6B4226"/>
+  <path d="M92 110 L90 175 Q90 188 100 188 Q110 188 110 175 L108 110Z" fill="#7D4F2D"/>
+  <!-- Roots -->
+  <path d="M85 180 Q70 195 55 200 Q65 198 78 190" fill="none" stroke="#6B4226" stroke-width="4" stroke-linecap="round"/>
+  <path d="M115 180 Q130 195 145 200 Q135 198 122 190" fill="none" stroke="#6B4226" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 185 Q80 200 72 210" fill="none" stroke="#6B4226" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 185 Q120 200 128 210" fill="none" stroke="#6B4226" stroke-width="3" stroke-linecap="round"/>
+</svg>
