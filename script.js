@@ -5,6 +5,20 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Dark/Light Theme Toggle ---
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('fssa-theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('fssa-theme', next);
+    });
+
     // --- Navigation Scroll Effect ---
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-links a');

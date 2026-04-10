@@ -48,6 +48,103 @@
     --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- Dark Mode Variables --- */
+[data-theme="dark"] {
+    --text-primary: #e8e8f0;
+    --text-secondary: #b0b0c0;
+    --text-muted: #8a8a9a;
+
+    --bg-white: #1a1a2e;
+    --bg-light: #16162a;
+    --bg-cream: #1e1e34;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.4);
+    --shadow-xl: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+    background: rgba(26, 26, 46, 0.95);
+    border-bottom-color: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .navbar.scrolled .nav-logo {
+    color: var(--green-300);
+}
+
+[data-theme="dark"] .navbar.scrolled .nav-links a {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .navbar.scrolled .nav-links a:hover,
+[data-theme="dark"] .navbar.scrolled .nav-links a.active {
+    color: var(--green-300);
+    background: rgba(74, 158, 63, 0.15);
+}
+
+[data-theme="dark"] .navbar.scrolled .nav-toggle span {
+    background: var(--text-primary);
+}
+
+[data-theme="dark"] .navbar.scrolled .nav-logo-img {
+    background: rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .subsection-title {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .section-tag {
+    color: var(--green-400);
+}
+
+[data-theme="dark"] .staff-card,
+[data-theme="dark"] .leader-card,
+[data-theme="dark"] .program-card,
+[data-theme="dark"] .collab-card,
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .contact-form-wrapper {
+    background: #22223a;
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .staff-role {
+    color: var(--green-400);
+}
+
+[data-theme="dark"] .timeline-item::before {
+    background: var(--green-400);
+}
+
+[data-theme="dark"] .theme-tag {
+    background: rgba(74, 158, 63, 0.15);
+    color: var(--green-300);
+}
+
+[data-theme="dark"] .gallery-placeholder {
+    background: #22223a;
+}
+
+[data-theme="dark"] .footer {
+    background: #0d0d1a;
+}
+
+[data-theme="dark"] .footer-logo-img {
+    background: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+    background: #2a2a44;
+    border-color: rgba(255,255,255,0.1);
+    color: var(--text-primary);
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
     margin: 0;
@@ -254,6 +351,70 @@ img {
 
 .navbar.scrolled .nav-toggle span {
     background: var(--text-primary);
+}
+
+/* --- Theme Toggle --- */
+.theme-toggle {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 1001;
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+.theme-toggle:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+.navbar.scrolled .theme-toggle {
+    background: var(--green-100);
+    border-color: var(--green-200);
+}
+
+.navbar.scrolled .theme-toggle:hover {
+    background: var(--green-200);
+}
+
+[data-theme="dark"] .navbar.scrolled .theme-toggle {
+    background: rgba(74, 158, 63, 0.15);
+    border-color: rgba(74, 158, 63, 0.3);
+}
+
+[data-theme="dark"] .navbar.scrolled .theme-toggle:hover {
+    background: rgba(74, 158, 63, 0.25);
+}
+
+.theme-icon {
+    line-height: 1;
+}
+
+.light-icon {
+    color: rgba(255,255,255,0.9);
+}
+
+.navbar.scrolled .light-icon {
+    color: var(--green-700);
+}
+
+.dark-icon {
+    display: none;
+    color: var(--gold-400);
+}
+
+[data-theme="dark"] .light-icon {
+    display: none;
+}
+
+[data-theme="dark"] .dark-icon {
+    display: inline;
 }
 
 /* ============================================
@@ -1424,6 +1585,12 @@ img {
 
     .nav-toggle {
         display: flex;
+    }
+
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
     }
 
     .nav-links {
