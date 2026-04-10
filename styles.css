@@ -635,6 +635,10 @@ img {
     letter-spacing: 0.08em;
 }
 
+.staff-grid + .subsection-title {
+    margin-top: 48px;
+}
+
 .leaders-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
